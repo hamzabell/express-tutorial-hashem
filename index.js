@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 require('./routes/food.routes')(app);
 require('./routes/order.routes')(app);
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.emw41.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
