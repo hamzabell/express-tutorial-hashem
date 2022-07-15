@@ -32,6 +32,6 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.emw41.mongodb.net/?retryWri
     process.exit();
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Our server is running')
 })
