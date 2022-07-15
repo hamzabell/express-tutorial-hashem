@@ -26,8 +26,6 @@ require('./routes/order.routes')(app);
 mongoose.connect('mongodb+srv://admin:admin@cluster0.emw41.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: true,
-    family: 4
 }).then(() => {
     console.log('mongo db running!')
 }).catch(() => {
